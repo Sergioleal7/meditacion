@@ -1,0 +1,33 @@
+body{
+   background: linear-gradient(#ffffff,#ffffff,#FFF1E6);
+    font-family: 'Roboto', sans-serif;
+}
+ 
+.botones {
+     display: flex; 
+    align-content: center;
+    justify-content: center;
+
+}
+
+.player-container{
+    padding-left: 5%;
+}
+
+.time-display {
+    margin-bottom: 0;
+    color: #383838;
+}
+
+.time-selection {
+    padding-left: 7%;
+    color: #383838;
+}
+
+.footer {
+    height: 30vh;
+    background: #383838;
+    color:#707070;
+    padding-top: 11%;
+}
+

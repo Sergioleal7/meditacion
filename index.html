@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Meditación</title>
+    <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css?family=Roboto&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    <script src="https://kit.fontawesome.com/5d4b5952b0.js"></script>
+</head>
+<body>
+
+
+
+<nav class="navbar navbar-expand-lg navbar-light bg-light">
+  <a class="navbar-brand" href="#">Zen</a>
+  <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+    <span class="navbar-toggler-icon"></span>
+  </button>
+  <div class="collapse navbar-collapse" id="navbarNav">
+    <ul class="navbar-nav">
+      <li class="nav-item active">
+        <a class="nav-link" href="index.html">Home <span class="sr-only">(current)</span></a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" href="#">Why meditate?</a>
+      </li>
+    </ul>
+  </div>
+</nav>   
+<br>
+<br> 
+<br>
+
+<!-- Sonidos -->
+<div class="div">
+    <h5 class="text-center">Sounds</h5>
+</div>
+<br>
+<div class="botones">
+<div class="row">
+    <div class="col">
+     <div class="app">
+      <div class="sound-picker">
+        <!-- <button data-sound="sounds/rain.mp3" class="btn"> 
+            <i class="fas fa-cloud-moon-rain"style="font-size: 90px; color:#585858;" id="icon" ></i> 
+        </button>
+            <button data-sound='sounds/beach.mp3' class="btn">
+            <i class="fas fa-water" style="font-size: 90px; color:#585858;"></i>
+        </button> -->
+        <button type="button"  data-sound="sounds/rain.mp3"  class="btn btn-primary btn-lg" style="background: none; color:#383838; border: 1px #383838 solid">Rain</button>
+    <button type="button" data-sound='sounds/beach.mp3' class="btn btn-secondary btn-lg" style="background: none; color:#383838">Beach</button>
+    </div>
+    </div>
+    </div>
+</div>
+
+</div>
+</div>
+
+<!-- Play/Pause -->
+ <div class="row">
+     <div class="col"></div>
+     <div class="col">
+            <div class="player-container">
+                    <audio class="song">
+                        <source src="sounds/rain.mp3">
+                    </audio>
+                    <img src="images/play.svg" alt="" id="play" width="400px">
+                </div>
+     </div>
+     <div class="col"></div>
+ </div>
+   
+ <!-- Time Display -->
+
+    <div class="row">
+        <div class="col"></div>
+        <div class="col">
+        <div class="div">
+            <p class="text-center">Time remaining</p>
+            <h3 id="time-display" class="text-center">00:00</h3>
+        </div>
+        </div>
+        <div class="col"></div>
+    </div>
+<br>
+
+<!-- Time Selection -->
+<div class="time-selection">
+    <div class="row">
+        <div class="col"></div>
+        <div class="col">
+              <div class="time-select">
+                      <button type="button" class="btn btn-outline-primary" data-time="120" style="color:#383838; border:1px solid #383838;">2 Minutes</button>
+                      <button type="button" class="btn btn-outline-primary" data-time="300" style="color:#383838; border:1px solid #383838;" >5 Minutes</button>
+                      <button type="button" class="btn btn-outline-primary" data-time="600" style="color:#383838; border:1px solid #383838;">10 Minute</button>
+               </div>
+        </div>
+        <div class="col"></div>
+    </div>      
+</div>
+<br>
+<br>
+
+<div class="footer">
+  <h2 class="text-center">Developed by Checho7</h2>
+</div>
+
+
+
+
+
+    
+<script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+ <script src="app.js"></script>   
+</body>
+</html>
